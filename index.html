@@ -5,15 +5,21 @@
     <meta name="viewport" content="width=device-width">
     <title>Complexity & Tractability</title>
     <link href="style/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=MuseoModerno">
   </head>
   <body>
 
-<nav>
+<nav id="navbar" class="topnav">
     <ul>
   <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#about">About</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#quiz">Quiz</a></li>
+  <li><a class="noActive" href="#about">About</a></li>
+  <li><a class="noActive" href="#complexity">Complexity</a></li>
+  <li><a class="noActive" href="#tractability">Tractability</a></li>
+  <li><a class="noActive" href="#quiz">Quiz</a></li>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
     </ul>
 </nav>
      
@@ -25,16 +31,24 @@
     <section id="about">
     
     <h2>About</h2>
-       <p>This website is designed to test and help improve NCEA level 3 computer science students on the complexity and tractability topic, hopefully to help with the end of year exam</p>
+       <p>Knowing when a problem you are trying to solve is one of these hard problems is very important. Otherwise it is easy to waste huge amounts of time trying to invent a clever program to solve it, and never getting anywhere. A computer scientist needs to be able to recognise a problem as an intractable problem, so that they can use other approaches. A very common approach is to give up on getting a perfect answer, and instead just aim for a good enough answer. There are a variety of techniques for getting good approximate answers to hard problems; a way of getting an answer that isn't guaranteed to give the exact correct answer is sometimes referred to as a heuristic.</p>
     
     </section>
 
     <div id="image2" data-stellar-background-ratio="0.5">
 
     </div>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Contact me through my email: <br>16069ac@kuranuicollege.school.nz</p>
+    <section id="complexityTractability">
+      <h2 id="complexity">Complexity</h2>
+      <p>Complexity is an important concept with problems and algorithms that solve them. Usually complexity is just the amount of time it takes to solve a problem, but there are several ways that we can measure the "time". Using the actual time on a particular computer can be useful, but to get a rough idea of the inherent behaviour of an algorithm, computer scientists often start by estimating the number of steps the algorithm will take for n items. For example, a linear search can end up checking each of n items being searched, so the algorithm will take n steps. An algorithm that compares every pair of values in a list of n items will have to make 
+n
+2
+ comparisons, so we can characterise it as taking about 
+n
+2
+ steps. This gives us a lot of information about how good an algorithm is without going into details of which computer it was running on, which language, and how well written the program was. The term complexity is generally used to refer to these rough measures.</p>
+      <h2 id="tractability">Tractability</h2>
+      <p>There's a very simple rule that computer scientists use to decide if an algorithm is tractable or not, based on the complexity (estimated number of steps) of the algorithm. Essentially, if the algorithm takes an exponential amount of time or worse for an input of size n, it is labelled as intractable. This simple rule is a bit crude, but it's widely used and provides useful guidance. Note that a factorial amount of time, n!, is intractable because it's bigger than an exponential function.</p>
 
     </section>
 
