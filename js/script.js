@@ -1,3 +1,4 @@
+//sticky nav
 window.onscroll = function() {myFunction2()};
 
 var navbar = document.getElementById("navbar");
@@ -17,7 +18,7 @@ function myFunction2() {
 
 
 
-
+//dropdown nav
 function myFunction() {
   var x = document.getElementById("navbar");
   if (x.className === "topnav") {
@@ -26,6 +27,8 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+
 
 
 
