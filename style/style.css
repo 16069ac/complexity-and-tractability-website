@@ -15,11 +15,14 @@ body {
   align-items: center;
   background: linear-gradient(90deg, #7200B3, #360054);
   color: white;
+  position: sticky;
+  top: 0;
 }
 
 .brand-title{
   font-size: 1.5rem;
   margin: .5rem;
+  font-family: arial;
 }
 
 .navbar-links ul {
@@ -36,9 +39,10 @@ body {
   text-decoration: none;
   color: white;
   padding: 1rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
   display: block;
+  font-family: arial;
 }
 
 .navbar-links li:hover {
@@ -104,7 +108,8 @@ body {
   }
 
   .navbar-links li a {
-    padding: .5rem 1rem
+    padding: .5rem 1rem;
+    font-family: arial;
   }
 
   .navbar-links.active {
