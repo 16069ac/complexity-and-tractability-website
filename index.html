@@ -22,9 +22,10 @@
      <div class="navbar-links">
        <ul>
          <li><a class="isActive" href="#" id="home">Home</a></li>
-         <li><a class="nonActive" href="#">About</a></li>
-         <li><a class="nonActive" href="#">Contact</a></li>
-         <li><a class="nonActive" href="#">Quiz</a></li>
+         <li><a class="nonActive" href="#about">About</a></li>
+         <li><a class="nonActive" href="#complexity">Complexity</a></li>
+         <li><a class="nonActive" href="#tractability">Tractability</a></li>
+         <li><a class="nonActive" href="#quiz">Quiz</a></li>
        </ul>
      </div>
 
@@ -59,17 +60,81 @@ n
 2
  steps. This gives us a lot of information about how good an algorithm is without going into details of which computer it was running on, which language, and how well written the program was. The term complexity is generally used to refer to these rough measures.</p>
     
+    <h2 id="tractability">Tractability</h2>
+      <p>There's a very simple rule that computer scientists use to decide if an algorithm is tractable or not, based on the complexity (estimated number of steps) of the algorithm. Essentially, if the algorithm takes an exponential amount of time or worse for an input of size n, it is labelled as intractable. This simple rule is a bit crude, but it's widely used and provides useful guidance. Note that a factorial amount of time, n!, is intractable because it's bigger than an exponential function.</p>
 
     </section>
 
     <!--parrallax image 3 -->
     <div id="image3" data-stellar-background-ratio="0.5"></div>
-    <section id="tractability">
-      <h2>Tractability</h2>
-      <p>There's a very simple rule that computer scientists use to decide if an algorithm is tractable or not, based on the complexity (estimated number of steps) of the algorithm. Essentially, if the algorithm takes an exponential amount of time or worse for an input of size n, it is labelled as intractable. This simple rule is a bit crude, but it's widely used and provides useful guidance. Note that a factorial amount of time, n!, is intractable because it's bigger than an exponential function.</p>
+    <section id="quiz">
+      
+      
+    <div id="container">
+
+      <h2>Quiz</h2>
+
+      <div id="q1">
+      <label><h3>Question 1:</h3> What does complexity mean? <br> 
+      1: The number of steps the algorithm will take <br>
+      2: How detailed the algorithm is<br>
+      3: How much coding there is<br></label>
+      <input type="range" min="1" max="3" value="1" id="question1Input" class="range">
+      <span id="question1Output"></span>
+    </div>
+
+    <div id="q2">
+      <label><h3>Question 2:</h3> Which is an example of a tractable algorithm?<br>
+      1: An algorithm estimated to take 1,000,000 years to complete<br>
+      2: An algorithm that works perfectly<br>
+      3: An algorithm that will take a few seconds to run<br></label>
+      <input type="range" min="1" max="3" value="1" id="question2Input" class="range">
+      <span id="question2Output"></span>
+    </div>
+
+    <div id="q3">
+      <label><h3>Question 3:</h3> Which is an example of a intractable algorithm?<br>
+      1: An algorithm estimated to take 1,000,000 years to complete<br>
+      2: An algorithm that works perfectly<br>
+      3: An algorithm that will take a few seconds to run<br></label>
+      <input type="range" min="1" max="3" value="1" id="question3Input" class="range">
+      <span id="question3Output"></span>
+    </div>
+
+    <div id="q4">
+      <label><h3>Question 4:</h3> What will having more processors do? <br>
+      1: Nothing<br>
+      2: Speed up running the algorithm<br>
+      3: Slow down running the algorithm<br></label>
+      <input type="range" min="1" max="3" value="1" id="question4Input" class="range">
+      <span id="question4Output"></span>
+    </div>
+
+    <div id="q5">
+      <label><h3>Question 5:</h3> If an algorithm had 10 items to run, with an operation speed of 5 items per second, and with 2 processors how long would this algorithm take to run?<br>
+      1: 10 seconds<br>
+      2: 5 seconds<br>
+      3: 2 seconds<br>
+      </label>
+      <input type="range" min="1" max="3" value="1" id="question5Input" class="range">
+      <span id="question5Output"></span>
+    </div>
+
+    <button onclick="submit()">Submit</button>
+
+    <p></p>
+
+    <label>Results:</label>
+    <span id="score"></span>
+
+    <!--<div>
+        <label>Results:</label><span id="results"></span>
+      </div>-->
 
   
     </section>
+
+  </div>
     <!--footer and reference -->
     <footer>
       <h2>Reference:</h2>
